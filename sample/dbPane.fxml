@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane fx:controller="sample.DBController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="750.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="244.0" layoutY="87.0" prefHeight="47.0" prefWidth="241.0" text="Collect News" textFill="#cc1414bf">
+         <font>
+            <Font name="American Typewriter" size="37.0" />
+         </font>
+      </Label>
+      <Label layoutX="277.0" layoutY="31.0" prefHeight="61.0" prefWidth="198.0" text=" NaBOo " textFill="#a41d1d">
+         <font>
+            <Font name="American Typewriter" size="52.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="179.0" prefHeight="28.0" prefWidth="324.0" text="Update your database here:">
+         <font>
+            <Font name="American Typewriter" size="23.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="dbArea" layoutX="45.0" layoutY="220.0" prefHeight="275.0" prefWidth="438.0" />
+      <Button fx:id="newsCollectorButton" layoutX="523.0" layoutY="304.0" mnemonicParsing="false" onAction="#onCollectClick" prefHeight="90.0" prefWidth="175.0" style="-fx-background-color: #C61A09; -fx-background-radius: 12px;" text="NEWS COLLECTOR" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

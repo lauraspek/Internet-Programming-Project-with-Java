@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane  fx:controller="sample.userController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="750.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="274.0" layoutY="17.0" prefHeight="61.0" prefWidth="202.0" text=" NaBOo " textFill="#a41d1d">
+         <font>
+            <Font name="American Typewriter" size="52.0" />
+         </font>
+      </Label>
+      <Label layoutX="238.0" layoutY="66.0" prefHeight="46.0" prefWidth="287.0" text="Users managing" textFill="#cc1414bf">
+         <font>
+            <Font name="American Typewriter" size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="130.0" text="Telegram ID:" textFill="#000000fd">
+         <font>
+            <Font name="American Typewriter" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="220.0" text="Nickname:">
+         <font>
+            <Font name="American Typewriter" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="306.0" text="Role:">
+         <font>
+            <Font name="American Typewriter" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="397.0" text="Approved Status:">
+         <font>
+            <Font name="American Typewriter" size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="updateRoleButton" layoutX="552.0" layoutY="252.0" mnemonicParsing="false" onAction="#onUpdateRole" prefHeight="50.0" prefWidth="145.0" style="-fx-background-color: #C61A09; -fx-background-radius: 12px;" text="UPDATE ROLE" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="approveButton" layoutX="552.0" layoutY="323.0" mnemonicParsing="false" onAction="#onApproveStatus" prefHeight="50.0" prefWidth="145.0" style="-fx-background-color: #C61A09; -fx-background-radius: 12px;" text="APPROVE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="addUserButton" layoutX="552.0" layoutY="180.0" mnemonicParsing="false" onAction="#onAddUser" prefHeight="50.0" prefWidth="145.0" style="-fx-background-color: #C61A09; -fx-background-radius: 12px;" text="ADD USER" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="deactivateButton" layoutX="552.0" layoutY="394.0" mnemonicParsing="false" onAction="#onDeactivateUser" prefHeight="50.0" prefWidth="145.0" style="-fx-background-color: C61A02; -fx-background-radius: 12px;" text="DEACTIVATE" textFill="#000000f1">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Button>
+      <TextField fx:id="userTelegramId" layoutX="34.0" layoutY="163.0" prefHeight="30.0" prefWidth="443.0" />
+      <TextField fx:id="userNickname" layoutX="34.0" layoutY="253.0" prefHeight="30.0" prefWidth="443.0" />
+      <TextField fx:id="userRole" layoutX="34.0" layoutY="337.0" prefHeight="30.0" prefWidth="443.0" />
+      <TextField fx:id="userApproved" layoutX="34.0" layoutY="428.0" prefHeight="30.0" prefWidth="443.0" />
+      <Button fx:id="prevUser" layoutX="260.0" layoutY="491.0" mnemonicParsing="false" onAction="#UserBack" prefHeight="35.0" prefWidth="92.0" style="-fx-background-color: red; -fx-background-radius: 12px;" text="&lt;" textFill="#303030">
+         <font>
+            <Font name="Verdana Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="nextUser" layoutX="397.0" layoutY="493.0" mnemonicParsing="false" onAction="#UserNext" prefHeight="35.0" prefWidth="92.0" style="-fx-background-color: red; -fx-background-radius: 12px;" text="&gt;" textFill="#303030">
+         <font>
+            <Font name="Verdana Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="clearFieldsButton" layoutX="595.0" layoutY="460.0" mnemonicParsing="false" onAction="#onClearFields" prefHeight="32.0" prefWidth="59.0" style="-fx-background-color: C61A02; -fx-background-radius: 12px;" text="Clear" textFill="#fffffff2">
+         <font>
+            <Font name="American Typewriter" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

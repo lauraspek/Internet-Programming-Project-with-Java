@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:controller="sample.RssController" focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="750.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="298.0" layoutY="14.0" prefHeight="61.0" prefWidth="198.0" text=" NaBOo " textFill="#a41d1d">
+         <font>
+            <Font name="American Typewriter" size="52.0" />
+         </font>
+      </Label>
+      <Label layoutX="215.0" layoutY="69.0" prefHeight="47.0" prefWidth="372.0" text="RSS Feed Managing" textFill="#cc1414bf">
+         <font>
+            <Font name="American Typewriter" size="37.0" />
+         </font>
+      </Label>
+      <TextField fx:id="addRssDescription" layoutX="185.0" layoutY="176.0" prefHeight="22.0" prefWidth="425.0">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </TextField>
+      <Label layoutX="38.0" layoutY="132.0" text="Here you can add one RSS feed">
+         <font>
+            <Font name="American Typewriter" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="59.0" layoutY="177.0">
+         <font>
+            <Font name="American Typewriter" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="125.0" layoutY="241.0" text="URL: ">
+         <font>
+            <Font name="American Typewriter" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="addButtonRss" layoutX="655.0" layoutY="195.0" mnemonicParsing="false" onAction="#onAddClick" prefHeight="48.0" prefWidth="58.0" style="-fx-background-color: #C61A09; -fx-background-radius: 12px;" text="+" textFill="WHITE">
+         <font>
+            <Font name="Verdana Bold" size="26.0" />
+         </font>
+      </Button>
+      <Label layoutX="33.0" layoutY="326.0" text=" RSS feed List">
+         <font>
+            <Font name="American Typewriter" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="removeButtonRss" layoutX="617.0" layoutY="403.0" mnemonicParsing="false" onAction="#onRemoveClick" prefHeight="58.0" prefWidth="105.0" style="-fx-background-color: #C61A09; -fx-background-radius: 12px;" text="REMOVE" textFill="#141313">
+         <font>
+            <Font name="Verdana Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="71.0" layoutY="180.0" text="Description: ">
+         <font>
+            <Font name="American Typewriter" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="addRssUrl" layoutX="185.0" layoutY="233.0" prefHeight="22.0" prefWidth="425.0">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="listRssDescription" layoutX="185.0" layoutY="368.0" prefHeight="37.0" prefWidth="390.0">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </TextField>
+      <Button fx:id="prevRss" layoutX="312.0" layoutY="324.0" mnemonicParsing="false" onAction="#RssBack" prefHeight="31.0" prefWidth="61.0" style="-fx-background-color: red; -fx-background-radius: 12px;" text="&lt;" textFill="#303030">
+         <font>
+            <Font name="Verdana Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="nextRss" layoutX="399.0" layoutY="324.0" mnemonicParsing="false" onAction="#RssNext" prefHeight="31.0" prefWidth="61.0" style="-fx-background-color: red; -fx-background-radius: 12px;" text="&gt;" textFill="#303030">
+         <font>
+            <Font name="Verdana Bold" size="16.0" />
+         </font>
+      </Button>
+      <Label layoutX="-2.0" layoutY="293.0" prefHeight="27.0" prefWidth="765.0" text="*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-">
+         <font>
+            <Font name="American Typewriter" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="376.0" text="Feed's description: ">
+         <font>
+            <Font name="American Typewriter" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="73.0" layoutY="434.0" text="Feed'sURL: ">
+         <font>
+            <Font name="American Typewriter" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="listRssUrl" layoutX="185.0" layoutY="426.0" prefHeight="37.0" prefWidth="390.0">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </TextField>
+      <Label layoutX="31.0" layoutY="492.0" text="Feed's Approved: ">
+         <font>
+            <Font name="American Typewriter" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="listRssApproved" layoutX="185.0" layoutY="485.0" prefHeight="37.0" prefWidth="390.0">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </TextField>
+      <Button fx:id="approveRssButton" layoutX="610.0" layoutY="466.0" mnemonicParsing="false" onAction="#onApproveRss" prefHeight="38.0" prefWidth="116.0" style="-fx-background-color: #C61A09; -fx-background-radius: 12px;" text="APPROVE" textFill="WHITE">
+         <font>
+            <Font name="Verdana Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

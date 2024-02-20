@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:controller="sample.FeedbackController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="750.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="277.0" layoutY="9.0" prefHeight="61.0" prefWidth="198.0" text=" NaBOo " textFill="#a41d1d">
+         <font>
+            <Font name="American Typewriter" size="52.0" />
+         </font>
+      </Label>
+      <Button fx:id="deleteComment" layoutX="221.0" layoutY="474.0" mnemonicParsing="false" onAction="#onDeleteComment" prefHeight="52.0" prefWidth="137.0" style="-fx-background-color: #C61A09; -fx-background-radius: 12px;" text="DELETE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Label layoutX="276.0" layoutY="66.0" prefHeight="46.0" prefWidth="197.0" text=" Feedback " textFill="#cc1414ae">
+         <font>
+            <Font name="American Typewriter" size="38.0" />
+         </font>
+      </Label>
+      <Button fx:id="prevComment" layoutX="265.0" layoutY="135.0" mnemonicParsing="false" onAction="#CommentBack" prefHeight="37.0" prefWidth="74.0" style="-fx-background-color: red; -fx-background-radius: 12px;" text="&lt;" textFill="#303030">
+         <font>
+            <Font name="Verdana Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="nextComment" layoutX="414.0" layoutY="134.0" mnemonicParsing="false" onAction="#CommentNext" prefHeight="37.0" prefWidth="74.0" style="-fx-background-color: red; -fx-background-radius: 12px;" text="&gt;" textFill="#303030">
+         <font>
+            <Font name="Verdana Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="unmarkcomment" layoutX="405.0" layoutY="474.0" mnemonicParsing="false" onAction="#onUnmarkComment" prefHeight="52.0" prefWidth="137.0" style="-fx-background-color: #C61A09; -fx-background-radius: 12px;" text="UNMARK" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <TextField fx:id="userNickname" layoutX="201.0" layoutY="329.0" prefHeight="37.0" prefWidth="494.0" />
+      <Label layoutX="76.0" layoutY="207.0" prefHeight="31.0" prefWidth="63.0" text="Text:">
+         <font>
+            <Font name="American Typewriter" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="62.0" layoutY="270.0" prefHeight="31.0" prefWidth="93.0" text="Marked:">
+         <font>
+            <Font name="American Typewriter" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="44.0" layoutY="401.0" prefHeight="31.0" prefWidth="121.0" text="News Title:">
+         <font>
+            <Font name="American Typewriter" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="commentMarked" layoutX="201.0" layoutY="267.0" prefHeight="37.0" prefWidth="494.0" />
+      <TextField fx:id="newsTitle" layoutX="201.0" layoutY="398.0" prefHeight="37.0" prefWidth="494.0" />
+      <TextField fx:id="commentText" layoutX="201.0" layoutY="205.0" prefHeight="37.0" prefWidth="494.0" />
+      <Label layoutX="21.0" layoutY="331.0" prefHeight="31.0" prefWidth="174.0" text="User Nickname:">
+         <font>
+            <Font name="American Typewriter" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

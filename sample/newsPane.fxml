@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane fx:controller="sample.NewsController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="750.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="281.0" layoutY="21.0" prefHeight="46.0" prefWidth="201.0" text=" NaBOo " textFill="#a41d1d">
+         <font>
+            <Font name="American Typewriter" size="52.0" />
+         </font>
+      </Label>
+      <Label layoutX="189.0" layoutY="79.0" prefHeight="46.0" prefWidth="388.0" text="News Administration" textFill="#cc1414ae">
+         <font>
+            <Font name="American Typewriter" size="37.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="162.0" text="Title:">
+         <font>
+            <Font name="American Typewriter" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="223.0" text="Date:">
+         <font>
+            <Font name="American Typewriter" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="290.0" prefHeight="27.0" prefWidth="133.0" text="Description:">
+         <font>
+            <Font name="American Typewriter" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="435.0" text="Url:">
+         <font>
+            <Font name="American Typewriter" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="363.0" text="Author:">
+         <font>
+            <Font name="American Typewriter" size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="prevNotizia" layoutX="209.0" layoutY="485.0" mnemonicParsing="false" onAction="#NewsBack" prefHeight="37.0" prefWidth="99.0" style="-fx-background-color: red; -fx-background-radius: 12px;" text="&lt;" textFill="#303030">
+         <font>
+            <Font name="Verdana Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="nextNotizia" layoutX="334.0" layoutY="486.0" mnemonicParsing="false" onAction="#NewsNext" prefHeight="37.0" prefWidth="97.0" style="-fx-background-color: red; -fx-background-radius: 12px;" text="&gt;" textFill="#303030">
+         <font>
+            <Font name="Verdana Bold" size="16.0" />
+         </font>
+      </Button>
+      <TextField fx:id="news_description" layoutX="176.0" layoutY="289.0" prefHeight="26.0" prefWidth="288.0" />
+      <TextField fx:id="news_title" layoutX="175.0" layoutY="163.0" prefHeight="26.0" prefWidth="288.0" />
+      <TextField fx:id="news_date" layoutX="176.0" layoutY="223.0" prefHeight="26.0" prefWidth="288.0" />
+      <TextField fx:id="news_author" layoutX="175.0" layoutY="364.0" prefHeight="26.0" prefWidth="288.0" />
+      <TextField fx:id="news_url" layoutX="175.0" layoutY="431.0" prefHeight="26.0" prefWidth="288.0" />
+      <Button fx:id="removeButton" layoutX="535.0" layoutY="430.0" mnemonicParsing="false" onAction="#onRemove" prefHeight="91.0" prefWidth="160.0" style="-fx-background-color: #C61A09; -fx-background-radius: 12px;" text="REMOVE NEWS">
+         <font>
+            <Font name="System Font" size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="news_totComment" layoutX="521.0" layoutY="252.0" prefHeight="26.0" prefWidth="183.0" />
+      <TextField fx:id="news_totRatings" layoutX="522.0" layoutY="318.0" prefHeight="26.0" prefWidth="183.0" />
+      <Label layoutX="553.0" layoutY="291.0" text="N. of Ratings :">
+         <font>
+            <Font name="American Typewriter" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="539.0" layoutY="222.0" prefHeight="27.0" prefWidth="148.0" text="N. of Comments:">
+         <font>
+            <Font name="American Typewriter" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

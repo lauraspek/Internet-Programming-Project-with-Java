@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane fx:controller="sample.HomeController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="578.0" prefWidth="801.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="37.0" layoutY="22.0" prefHeight="47.0" prefWidth="268.0" text=" NaBOo Home" textFill="#a41d1d">
+         <font>
+            <Font name="American Typewriter" size="40.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonRSS" layoutX="72.0" layoutY="95.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onRSSClick" prefHeight="62.0" prefWidth="165.0" style="-fx-background-color: #C61A09; -fx-background-radius: 12PX;" text="RSS MANAGING" textFill="WHITE" />
+      <Button fx:id="buttonDB" layoutX="72.0" layoutY="172.0" mnemonicParsing="false" onAction="#onDBClick" prefHeight="62.0" prefWidth="165.0" style="-fx-background-color: #C61A09; -fx-background-radius: 12PX;" text="COLLECT NEWS" textFill="WHITE" />
+      <Button fx:id="buttonUsers" layoutX="72.0" layoutY="328.0" mnemonicParsing="false" onAction="#onUsersClick" prefHeight="62.0" prefWidth="165.0" style="-fx-background-color: #C61A09; -fx-background-radius: 12PX;" text="USERS MANAGING" textFill="WHITE" />
+      <Button fx:id="buttonMod" layoutX="72.0" layoutY="408.0" mnemonicParsing="false" onAction="#onModClick" prefHeight="62.0" prefWidth="165.0" style="-fx-background-color: #C61A09; -fx-background-radius: 12PX;" text="MODERATE COMMENTS" textFill="WHITE" />
+      <Button fx:id="buttonNews" layoutX="72.0" layoutY="249.0" mnemonicParsing="false" onAction="#onNewsClick" prefHeight="62.0" prefWidth="165.0" style="-fx-background-color: #C61A09; -fx-background-radius: 12PX;" text="NEWS ADMINISTRATION" textFill="WHITE" />
+      <Label layoutX="360.0" layoutY="245.0" text="WELCOME ADMIN!">
+         <font>
+            <Font name="American Typewriter" size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="295.0" layoutY="295.0" prefHeight="33.0" prefWidth="478.0" text="Choose what to do with the buttons on your left :)">
+         <font>
+            <Font name="Apple SD Gothic Neo Regular" size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonRating" layoutX="72.0" layoutY="485.0" mnemonicParsing="false" onAction="#onRatingClick" prefHeight="62.0" prefWidth="165.0" style="-fx-background-color: #C61A09; -fx-background-radius: 12PX;" text="VIEW RATINGS" textFill="WHITE" />
+   </children>
+</Pane>
