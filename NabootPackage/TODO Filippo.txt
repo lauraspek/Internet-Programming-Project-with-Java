@@ -1,0 +1,31 @@
+	fix segnalibri, inserendoli nella conversation
+
+	rimuovi cancellazione messaggi precedenti
+	deleteResult = deleteMessage(chatID,conversations.get(conversationIndex).getLastMessageID());
+	conversations.get(conversationIndex).setLastMessageID(messageResult.getInt("message_id"));
+
+	cambia gestione tmpNews
+
+	filtro data
+
+	salvataggio voto
+
+	sezione commenti (attesa metodo user get da ID)
+
+	aggiunta commento
+
+	segnala commento
+
+correggere logica login - al momento non è gestita l'eventualità che un utente pending di approvazione chieda uno /start
+
+rimuovere comando debug "/approveuser" dallo START
+
+	opzioni cancella utente
+
+	segnala news
+
+	crea logica registrazione
+
+	crea thread e aggiungi il thread al main di Laura
+
+aggiungi count voti e commenti ad ogni news
